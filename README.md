@@ -15,7 +15,7 @@ I created and analyzed them only to learn and document phishing techniques. Stil
 
 - MXToolbox Email Header Analyzer - to check SPF/DKIM/DMARC and trace the delivery path.  
 - Hook Security - where I referenced example formats and phishing patterns.
-- Claude AI - 
+- Claude AI - To generate Synthetic Mails
 
 ## Quick Summary
 
@@ -114,21 +114,16 @@ and used urgency or fear to make the recipient act quickly.
 - Report phishing emails to the relevant teams or the impersonated brand (e.g., PayPal, Amazon).  
 - Run regular awareness sessions for colleagues — most attacks rely on human error.
 
-## What I learned
-
-Working on these samples helped me get comfortable with reading headers, spotting small domain tricks, and understanding how attackers use urgency and authority. I also practiced documenting findings in a way that a security team or a non-technical person can follow.
-
 ## References & Resources
 
 - Hook Security Phishing Email Examples: https://www.hooksecurity.co/phishing-email-examples  
 - MXToolbox Email Header Analyzer: https://mxtoolbox.com/EmailHeaders.aspx  
-- Claude
+- Claude AI: https://claude.ai/chat/e22212a7-1d85-47f5-b274-60e84f2e29f
 
 ## Repository contents
 
 Phishing-Email-Analysis/
 ├── README.md ← (this report)
-├── sample1.txt – sample10.txt
-├── sample1-headers.txt – sample10-headers.txt
-├── screenshots/ ← images showing the email and URL hover (redacted)
-└── tools/ ← optional urlscan / VirusTotal outputs
+├── Phishing_Samples_Data.txt
+├── screenshots
+    ├── Mail samples from HookSecurity
