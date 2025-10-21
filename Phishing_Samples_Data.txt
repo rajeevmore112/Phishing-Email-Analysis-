@@ -1,0 +1,360 @@
+================================================================================
+SAMPLE 1: Fake PayPal Account Suspension [Not Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: PayPal Security <service@paypa1-secure.com>
+Reply-To: support@paypa1-secure.com
+To: victim@example.com
+Subject: Urgent: Your PayPal Account Has Been Limited
+Date: Mon, 20 Oct 2025 14:23:45 +0000
+Message-ID: <20251020142345.12345@paypa1-secure.com>
+Return-Path: <bounce@paypa1-secure.com>
+Received: from mail.paypa1-secure.com (unknown [185.234.56.78])
+    by mx.example.com with SMTP id abc123
+    Mon, 20 Oct 2025 14:23:45 +0000
+X-Mailer: PHPMailer 5.2.23
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-Originating-IP: [185.234.56.78]
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=paypa1-secure.com
+
+BODY:
+Dear Valued Customer,
+
+We have detected unusual activity on your PayPal account. For your security, 
+we have temporarily limited your account access.
+
+Click here to verify your identity and restore full access:
+http://paypa1-secure.com/verify-account-2025
+
+If you do not verify within 24 hours, your account will be permanently suspended.
+
+Thank you,
+PayPal Security Team
+
+================================================================================
+SAMPLE 2: Fake Microsoft 365 Password Expiration [Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: Microsoft 365 Admin <no-reply@microsoft-services.net>
+Reply-To: admin@microsoft-services.net
+To: employee@company.com
+Subject: [ACTION REQUIRED] Your password will expire today
+Date: Mon, 20 Oct 2025 09:15:32 -0500
+Message-ID: <ms365-20251020091532@microsoft-services.net>
+Return-Path: <bounce@microsoft-services.net>
+Received: from smtp.microsoft-services.net ([91.203.45.12])
+    by mail.company.com with ESMTP id xyz789
+    Mon, 20 Oct 2025 09:15:32 -0500
+X-Sender-IP: 91.203.45.12
+MIME-Version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+Authentication-Results: company.com; dkim=none; spf=softfail
+
+BODY:
+Your Microsoft 365 password expires today at 5:00 PM.
+
+To continue accessing your email and files, update your password immediately:
+
+https://microsoft-services.net/password/update?user=employee@company.com
+
+Failure to update will result in account lockout.
+
+IT Support Team
+
+================================================================================
+SAMPLE 3: Fake Bank Alert - Wells Fargo [Not Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: Wells Fargo Alerts <alerts@wellsfargo-online.com>
+Reply-To: security@wellsfargo-online.com
+To: customer@gmail.com
+Subject: Suspicious Activity Detected on Account ***4567
+Date: Tue, 21 Oct 2025 03:42:18 +0000
+Message-ID: <wf-alert-20251021034218@wellsfargo-online.com>
+Return-Path: <noreply@wellsfargo-online.com>
+Received: from mail.wellsfargo-online.com (mail.wellsfargo-online.com [203.145.78.234])
+    by gmail.com with SMTP
+    Tue, 21 Oct 2025 03:42:18 +0000
+X-Originating-IP: [203.145.78.234]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-Mailer: SendGrid
+Authentication-Results: gmail.com; spf=neutral; dmarc=fail
+
+BODY:
+Wells Fargo Security Alert
+
+We detected a $2,450.00 charge at "Electronics Store - Shanghai" on your 
+account ending in 4567.
+
+If this wasn't you, secure your account immediately:
+https://wellsfargo-online.com/secure/verify
+
+This transaction will be processed in 2 hours unless you take action.
+
+Wells Fargo Fraud Prevention
+
+================================================================================
+SAMPLE 4: Fake Amazon Order Confirmation [Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: Amazon.com <order-update@amazon-services.co>
+Reply-To: customer-service@amazon-services.co
+To: shopper@yahoo.com
+Subject: Your Amazon order #482-9273645-1029374 has shipped
+Date: Mon, 20 Oct 2025 18:34:56 -0700
+Message-ID: <amzn-20251020183456@amazon-services.co>
+Return-Path: <returns@amazon-services.co>
+Received: from smtp.amazon-services.co ([159.89.123.45])
+    by mx.yahoo.com
+    Mon, 20 Oct 2025 18:34:56 -0700
+X-SenderIP: 159.89.123.45
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Authentication-Results: yahoo.com; spf=fail; dkim=fail
+
+BODY:
+Your order has shipped!
+
+Order Number: 482-9273645-1029374
+Item: MacBook Pro 16" M4 - $2,899.99
+Shipping Address: 1234 Unknown St, Austin, TX
+
+If you did not place this order, cancel it here:
+http://amazon-services.co/cancel/482-9273645-1029374
+
+Track your package: [Tracking Link]
+
+Thank you for shopping with Amazon
+
+================================================================================
+SAMPLE 5: Fake IRS Tax Notice [Not Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: Internal Revenue Service <notices@irs-gov.org>
+Reply-To: taxpayer-services@irs-gov.org
+To: taxpayer@outlook.com
+Subject: IRS Notice CP2000 - Immediate Response Required
+Date: Wed, 15 Oct 2025 11:22:33 -0400
+Message-ID: <irs-cp2000-20251015112233@irs-gov.org>
+Return-Path: <donotreply@irs-gov.org>
+Received: from mail.irs-gov.org ([45.123.67.89])
+    by outlook.com
+    Wed, 15 Oct 2025 11:22:33 -0400
+X-Source-IP: 45.123.67.89
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Authentication-Results: outlook.com; spf=none; dmarc=none
+
+BODY:
+INTERNAL REVENUE SERVICE
+Department of the Treasury
+
+Notice CP2000
+Tax Year: 2024
+SSN: XXX-XX-4532
+
+Our records indicate a discrepancy of $8,450.00 in your reported income.
+
+You must respond within 30 days to avoid:
+- Additional penalties of $2,115.00
+- Potential legal action
+- Wage garnishment
+
+Access your secure IRS portal to review and respond:
+https://irs-gov.org/portal/cp2000/respond
+
+Contact: 1-800-829-1040 (IRS Helpline)
+
+================================================================================
+SAMPLE 6: Fake LinkedIn Connection Phish [Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: LinkedIn <notifications@linkedin-mail.net>
+Reply-To: noreply@linkedin-mail.net
+To: professional@company.com
+Subject: You have 5 new profile views - See who's interested
+Date: Thu, 16 Oct 2025 13:45:22 +0000
+Message-ID: <li-notif-20251016134522@linkedin-mail.net>
+Return-Path: <bounce@linkedin-mail.net>
+Received: from smtp.linkedin-mail.net ([88.234.12.56])
+    by mail.company.com
+    Thu, 16 Oct 2025 13:45:22 +0000
+X-Originating-IP: [88.234.12.56]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-Priority: 3
+Authentication-Results: company.com; spf=softfail; dkim=none
+
+BODY:
+Hi [Name],
+
+You have 5 new profile views this week, including:
+
+• Sarah Johnson - HR Manager at Tech Corp
+• Michael Chen - Senior Recruiter at Fortune 500
+• Emma Williams - CEO at StartupXYZ
+
+See who else viewed your profile:
+https://linkedin-mail.net/profile/views?id=professional
+
+This could be your next career opportunity!
+
+The LinkedIn Team
+
+================================================================================
+SAMPLE 7: Fake Google Drive Share Notification [Not Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: Google Drive <drive-noreply@googledrive-share.com>
+Reply-To: noreply@googledrive-share.com
+To: user@enterprise.com
+Subject: John Smith shared "Q4 Financial Report.xlsx" with you
+Date: Fri, 17 Oct 2025 08:12:45 -0800
+Message-ID: <gdrive-20251017081245@googledrive-share.com>
+Return-Path: <bounce@googledrive-share.com>
+Received: from mail.googledrive-share.com ([194.67.89.123])
+    by mx.enterprise.com
+    Fri, 17 Oct 2025 08:12:45 -0800
+X-Google-ID: fake-tracking-id-12345
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Authentication-Results: enterprise.com; spf=fail; dkim=fail; dmarc=fail
+
+BODY:
+John Smith (john.smith@partner-company.com) has shared a file with you:
+
+📄 Q4 Financial Report.xlsx
+
+"Please review before Monday's meeting"
+
+[Open in Drive]
+https://googledrive-share.com/file/d/1a2b3c4d5e6f7g8h9i/view
+
+This file will expire in 48 hours.
+
+© 2025 Google LLC
+
+================================================================================
+SAMPLE 8: Fake DHL Package Delivery [Not Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: DHL Express <deliveryinfo@dhl-express.net>
+Reply-To: customercare@dhl-express.net
+To: recipient@example.org
+Subject: DHL Shipment 7234569821 - Action Required for Delivery
+Date: Sat, 18 Oct 2025 06:33:12 +0100
+Message-ID: <dhl-20251018063312@dhl-express.net>
+Return-Path: <noreply@dhl-express.net>
+Received: from smtp.dhl-express.net ([176.123.45.234])
+    by mail.example.org
+    Sat, 18 Oct 2025 06:33:12 +0100
+X-Sender: dhl-express.net
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Authentication-Results: example.org; spf=neutral; dkim=none
+
+BODY:
+DHL EXPRESS DELIVERY NOTIFICATION
+
+Tracking Number: 7234569821
+Status: Pending - Customs Fee Required
+
+Your international package requires a customs clearance fee of $3.50 
+before delivery can proceed.
+
+Pay online to receive your package:
+https://dhl-express.net/customs/pay/7234569821
+
+Sender: International Distribution Center
+Weight: 2.1 kg
+Estimated Delivery: After payment processing
+
+DHL Express - Excellence. Simply Delivered.
+
+================================================================================
+SAMPLE 9: Fake Apple ID Suspension [Not Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: Apple Support <appleid@apple-support.com>
+Reply-To: support@apple-support.com
+To: iphone-user@icloud.com
+Subject: Your Apple ID has been disabled
+Date: Sun, 19 Oct 2025 22:17:39 +0000
+Message-ID: <appleid-20251019221739@apple-support.com>
+Return-Path: <noreply@apple-support.com>
+Received: from mail.apple-support.com ([203.78.45.167])
+    by icloud.com
+    Sun, 19 Oct 2025 22:17:39 +0000
+X-Apple-ID: fake-apple-tracking
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-Priority: 1 (Highest)
+Authentication-Results: icloud.com; spf=fail; dmarc=fail
+
+BODY:
+Dear Apple Customer,
+
+Your Apple ID (iphone-user@icloud.com) has been disabled due to a 
+security concern.
+
+To restore access to:
+• iCloud Storage
+• App Store Purchases
+• iMessage and FaceTime
+• Find My iPhone
+
+Verify your account immediately:
+https://apple-support.com/id/verify
+
+Failure to verify within 24 hours will result in permanent account deletion 
+and loss of all data.
+
+Apple Support
+
+================================================================================
+SAMPLE 10: Fake DocuSign Document Request [Not Blacklisted on MXToolbox]
+================================================================================
+
+HEADERS:
+From: DocuSign <dse@docusign-notify.net>
+Reply-To: donotreply@docusign-notify.net
+To: business@company.com
+Subject: Please DocuSign: Contract Agreement from Legal Dept
+Date: Mon, 20 Oct 2025 10:28:44 -0500
+Message-ID: <ds-20251020102844@docusign-notify.net>
+Return-Path: <bounce@docusign-notify.net>
+Received: from mail.docusign-notify.net ([167.89.234.56])
+    by mx.company.com
+    Mon, 20 Oct 2025 10:28:44 -0500
+X-DocuSign-Envelope-ID: fake-envelope-12345-abcde
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Authentication-Results: company.com; spf=softfail; dkim=none; dmarc=none
+
+BODY:
+DocuSign
+
+Legal Department has sent you a document to review and sign.
+
+Document: "Employment Contract Amendment 2025"
+From: legal@company.com
+Expires: October 21, 2025
+
+[REVIEW DOCUMENT]
+https://docusign-notify.net/signing/documents?envelope=fake-envelope-12345-abcde
+
+This is an automated message from DocuSign. Please do not reply.
+
+If you cannot click the link above, copy and paste this URL into your browser:
+https://docusign-notify.net/signing/documents?envelope=fake-envelope-12345-abcde
